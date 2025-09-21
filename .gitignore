@@ -1,2 +1,5 @@
-git rm -r --cached Tools/
-git rm --cached *.png
+# Ignoriere den kompletten Tools-Ordner
+Tools/
+
+# Ignoriere alle PNG-Dateien im Repo
+*.png
