@@ -1,0 +1,70 @@
+@echo off
+cls
+echo. Programmiere Vendor Settings
+echo.
+echo.
+
+echo part 1
+amidewinx64 /SM "Systec & Solutions GmbH"
+rem pause
+amidewinx64 /SP "[*TYPE*]"
+rem pause
+amidewinx64 /SV "V2023"
+rem pause
+amidewinx64 /SS "[*SERIAL*]"
+rem pause
+amidewinx64 /SU "[*SERIAL*]"
+rem pause
+amidewinx64 /SK "[*SERIAL*]"
+rem pause
+
+echo part 2
+amidewinx64 /BM "Systec & Solutions GmbH"
+rem pause
+amidewinx64 /BP "[*TYPE*]"
+rem pause
+amidewinx64 /BV "V2023"
+rem pause
+amidewinx64 /BS "[*SERIAL*]"
+rem pause
+amidewinx64 /BT "[*SERIAL*]"
+rem pause
+
+echo part3
+amidewinx64 /CM "Systec & Solutions GmbH"
+rem pause
+amidewinx64 /CT "[*TYPE*]"
+rem pause
+amidewinx64 /CV "V2023"
+rem pause
+amidewinx64 /CA "[*TYPE*]"
+rem pause
+amidewinx64 /CS "[*SERIAL*]"
+rem pause
+amidewinx64 /CA "[*TYPE*]"
+rem pause
+amidewinx64 /CO "OEM INFO"
+rem pause
+
+echo part4
+amidewinx64 /OS 1 "Systec & Solutions GmbH HMI Device"
+rem pause
+amidewinx64 /SCO 1 "Systec & Solutions GmbH HMI Device"
+rem pause
+
+amidewinx64 /ALL [*SERIAL*]-all.txt
+amidewinx64 /DMS [*SERIAL*]-dms.txt
+
+echo folgende Werte wurden aus dem Barcode generiert
+echo.
+echo Seriennummer: [*SERIAL*]
+echo Artikelnummer: [*ARTNO*]
+echo Gerätetyp: [*TYPE*]
+echo.
+echo folgende Log Files wurden zum Programmiervorgang angelegt
+echo [*SERIAL*].all.txt
+echo [*SERIAL*].dms.txt
+echo.
+echo Alle Wert sind Programmiert
+echo. 
+
